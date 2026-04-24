@@ -1,0 +1,435 @@
+
+> linkedin-backend@1.0.0 start
+> nodemon index.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "user"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getProfileById (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/user.js:142:25) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "user"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getProfileById (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/user.js:142:25) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+ReferenceError: posts is not defined
+    at exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:85:20)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:295:15
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:600:14)
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:610:14)
+    at processParams (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:664:3)
+ReferenceError: posts is not defined
+    at exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:85:20)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:295:15
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:600:14)
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:610:14)
+    at processParams (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:664:3)
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "user"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getProfileById (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/user.js:142:25) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+ReferenceError: posts is not defined
+    at exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:85:20)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:295:15
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:600:14)
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:610:14)
+    at processParams (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:664:3)
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "user"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getProfileById (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/user.js:142:25) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._findOne (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2674:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+ReferenceError: posts is not defined
+    at exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:85:20)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:295:15
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:600:14)
+    at param (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:610:14)
+    at processParams (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/router/index.js:664:3)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+User Connected
+Database Successfully connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+User Connected
+Database Successfully connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+User Connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+Database Successfully connected
+User Connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Backend Server is running on Port 4000
+User Connected
+Database Successfully connected
+User Connected
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+CastError: Cast to ObjectId failed for value "undefined" (type string) at path "user" for model "post"
+    at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+    at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+    at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+    at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+    at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+    at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+    at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.getTop5PostForUser (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/controller/post.js:75:23) {
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: 'user',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/bson/lib/bson.cjs:2523:23)
+      at castObjectId (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schema/objectId.js:249:12)
+      at SchemaType.applySetters (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1255:12)
+      at SchemaType.castForQuery (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/schemaType.js:1673:17)
+      at cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/cast.js:390:32)
+      at Query.cast (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:5055:12)
+      at Query._castConditions (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2351:10)
+      at model.Query._find (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:2378:8)
+      at model.Query.exec (/home/sadman/Desktop/Project/a/linkedIn-public/linkedin-backend/node_modules/mongoose/lib/query.js:4604:80),
+  valueType: 'string'
+}
+[32m[nodemon] restarting child process[39m

@@ -1,0 +1,35 @@
+export const mockApplications = [
+  {
+    id: 'app_01',
+    jobId: 'job_01',
+    candidateId: 'cand_01',
+    candidateName: 'John Doe',
+    jobTitle: 'Web Developer',
+    companyName: 'Web Technology pvt.Ltd',
+    appliedDate: '2024-01-10',
+    status: 'pending', // pending, shortlisted, rejected, accepted
+    coverLetter: 'I am very interested in this position...',
+  },
+  {
+    id: 'app_02',
+    jobId: 'job_02',
+    candidateId: 'cand_02',
+    candidateName: 'Jane Smith',
+    jobTitle: 'Business Associate',
+    companyName: 'Pixel Technology pvt.Ltd',
+    appliedDate: '2024-01-12',
+    status: 'shortlisted',
+    coverLetter: 'I believe I would be a great fit for this role...',
+  },
+  {
+    id: 'app_03',
+    jobId: 'job_03',
+    candidateId: 'cand_03',
+    candidateName: 'Mike Johnson',
+    jobTitle: 'UI/UX Designer',
+    companyName: 'Web Technology pvt.Ltd',
+    appliedDate: '2024-01-15',
+    status: 'pending',
+    coverLetter: 'With my 5 years of experience...',
+  },
+]

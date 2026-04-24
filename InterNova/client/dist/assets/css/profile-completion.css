@@ -1,0 +1,158 @@
+/* ProfileCompletionBar Custom Styles (moved to assets) */
+
+.profile-completion-container {
+  width: 100%;
+}
+
+.profile-completion-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.profile-progress-wrapper {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+/* Thick, rounded progress bar with shadow */
+.profile-progress {
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: #e9ecef;
+  overflow: visible;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08),
+              inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.profile-progress .progress-bar {
+  border-radius: 1.5rem;
+  transition: width 0.6s ease-out;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  min-width: 3rem;
+}
+
+/* Centered percentage display */
+.progress-percentage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+/* Milestone markers */
+.milestone-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.milestone-marker {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
+}
+
+.milestone-marker:last-child {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 3px;
+}
+
+/* Helper text styling */
+.profile-completion-helper-text {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Smooth animation for progress bar */
+@keyframes progressFill {
+  from {
+    width: 0;
+  }
+}
+
+.profile-progress .progress-bar {
+  animation: progressFill 0.8s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .profile-progress {
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .profile-progress .progress-bar {
+    border-radius: 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .progress-percentage {
+    font-size: 0.75rem;
+  }
+}
+
+/* Enhanced color variants with proper contrast */
+.profile-progress .progress-bar.bg-danger {
+  background-color: #dc3545;
+}
+
+.profile-progress .progress-bar.bg-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.profile-progress .progress-bar.bg-warning .progress-percentage {
+  color: #212529;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.profile-progress .progress-bar.bg-info {
+  background-color: #0dcaf0;
+  color: #212529;
+}
+
+.profile-progress .progress-bar.bg-info .progress-percentage {
+  color: #212529;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.profile-progress .progress-bar.bg-success {
+  background-color: #198754;
+}
+
+/* Striped pattern for visual interest (optional enhancement) */
+.profile-progress .progress-bar-animated {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}

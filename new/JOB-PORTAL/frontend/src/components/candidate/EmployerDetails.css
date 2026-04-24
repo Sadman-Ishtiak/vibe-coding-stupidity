@@ -1,0 +1,206 @@
+/* 
+	* widget menu link
+	* widget blog 1 
+	* blog-pagination 
+	* blog
+	* widget-side-bar 
+	* widget box-latest 
+	* HOME PAGE
+	* widget review job
+	* widget get app 
+	* widget counter 
+	* widget testimonials
+	* widget location
+	* slider 
+	* CV item
+	* banner rating 
+	* sidebar popup
+	* popup
+	* haft map
+	* list radio 
+	* single job 
+	* accordion 
+	* term 
+	* contact 
+	* pricing
+	* shop
+	* animation
+	* widget features job
+	* widget category job 
+	* widget Employer
+	* wd-employer style-2  
+	* wd-employer style3
+	* widget-icon-box
+	* widget-partner
+	* widget-thumb-career
+	* widget-thumb-career style-2 
+	* wd-form-rating-page 
+	* wd-form-rating 
+	* wd-job-author
+	* wd-author-page-title
+	* jobs tab
+	* PAGE 
+	* Check out
+	* MAP
+	* TF section spacing 
+	* Inner page section spacing 
+	*/
+
+@import url(dashboard.css);
+@import url(nice-select.css);
+@import url(../fonts/icon-font.css);
+@import url(animate.css);
+@import url(range.slider.css);
+
+.tf-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 1440px;
+	max-width: 100%;
+}
+
+/* widget menu link */
+.widget-menu-link {
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+.widget-menu-link ul {
+	width: 100%;
+	max-width: 1410px;
+	margin: auto;
+	display: flex;
+	padding: 12px 0;
+}
+
+.widget-menu-link ul li {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+	padding-right: 28px;
+	position: relative;
+}
+
+.widget-menu-link ul li a {
+	color: #b1b1b1;
+}
+
+.widget-menu-link ul li:last-child {
+	padding: 0;
+}
+
+.widget-menu-link ul li:last-child a {
+	color: #121212;
+}
+
+.widget-menu-link ul li::after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	top: 50%;
+	right: 12px;
+	background-color: #b1b1b1;
+}
+
+.widget-menu-link ul li:last-child::after {
+	display: none;
+}
+
+/* widget-blog-1 */
+.widget-blog-1 {
+	display: flex;
+	gap: 33px;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.widget-blog-1.style-1 {
+	flex-direction: column;
+	gap: 0;
+	margin-bottom: 40px;
+}
+
+.widget-blog-1.style-1 .img-blog {
+	width: 100%;
+}
+
+.widget-blog-1.style-1 .content {
+	padding: 24px;
+}
+
+.widget-blog-1 .content {
+	padding: 27px 0;
+}
+
+.widget-blog-1.style-1.margin-1 {
+	margin-top: -140px;
+}
+
+.widget-blog-1 .sub-title {
+	display: inline-block;
+	padding: 4px 16px;
+	background: rgba(20, 129, 96, 0.1);
+	border-radius: 40px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	color: #14a077;
+	margin-bottom: 8px;
+}
+
+.widget-blog-1 .main-title {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #121212;
+	margin-bottom: 8px;
+	text-transform: capitalize;
+}
+
+.widget-blog-1 .content .meta {
+	display: flex;
+	gap: 16px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #121212;
+	margin-bottom: 16px;
+}
+
+.widget-blog-1 .content .meta .author span {
+	color: #64666c;
+}
+
+.widget-blog-1 .content p {
+	width: 100%;
+	max-width: 545px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #64666c;
+	margin-bottom: 16px;
+}
+
+.widget-button-underline {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	text-decoration-line: underline;
+}
+
+.widget-button-underline a {
+	color: #121212;
+}
+
+/* Minimal editing: file contains the complete stylesheet as provided by user. */

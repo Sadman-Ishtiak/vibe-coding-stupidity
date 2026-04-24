@@ -1,0 +1,19 @@
+
+  VITE v6.3.5  ready in 1404 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.0.103:5173/
+  ➜  Network: http://192.168.158.139:5173/
+6:17:59 PM [vite] (client) hmr update /src/pages/MyNetwork/myNetwork.jsx, /src/index.css, /src/index.css?direct
+6:18:15 PM [vite] (client) hmr update /src/pages/Profile/profile.jsx, /src/index.css, /src/index.css?direct
+6:18:53 PM [vite] (client) hmr update /src/components/Post/post.jsx, /src/index.css, /src/index.css?direct
+6:19:35 PM [vite] (client) hmr update /src/pages/Notification/notification.jsx, /src/index.css, /src/index.css?direct
+6:19:40 PM [vite] (client) hmr update /src/pages/Messages/messages.jsx, /src/index.css, /src/index.css?direct
+6:19:55 PM [vite] (client) hmr update /src/pages/Messages/messages.jsx, /src/index.css, /src/index.css?direct
+7:42:33 PM [vite] (client) hmr update /src/pages/SignUp/signUp.jsx, /src/index.css, /src/index.css?direct
+7:43:05 PM [vite] (client) hmr update /src/pages/Login/login.jsx, /src/index.css, /src/index.css?direct
+7:43:12 PM [vite] (client) hmr update /src/pages/Profile/profile.jsx, /src/index.css, /src/index.css?direct
+7:43:18 PM [vite] (client) hmr update /src/pages/Profile/profile.jsx, /src/index.css, /src/index.css?direct
+7:43:25 PM [vite] (client) hmr update /src/pages/Profile/profile.jsx, /src/index.css, /src/index.css?direct
+7:44:22 PM [vite] (client) hmr update /src/App.jsx, /src/index.css, /src/index.css?direct
+7:44:48 PM [vite] (client) hmr update /src/pages/Profile/profile.jsx, /src/index.css, /src/index.css?direct

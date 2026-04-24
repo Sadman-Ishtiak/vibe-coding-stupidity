@@ -1,0 +1,535 @@
+// File: server/models/Application.js
+const mongoose = require('mongoose');
+
+const applicationSchema = new mongoose.Schema(
+  {
+    candidateId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Candidate',
+      required: true
+    },
+    
+    jobId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Job',
+      required: true
+    },
+    
+    recruiterId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },
+    
+    resume: {
+      type: String
+    },
+    
+    status: {
+      type: String,
+      enum: ['pending', 'shortlisted', 'rejected', 'accepted'],
+      default: 'pending'
+    },
+    
+    appliedAt: {
+      type: Date,
+      default: Date.now
+    }
+  },
+  { timestamps: true }
+);
+
+// Index for faster queries
+applicationSchema.index({ candidateId: 1, status: 1 });
+applicationSchema.index({ recruiterId: 1, status: 1 });
+
+// ✅ Unique compound index to prevent duplicate applications
+applicationSchema.index({ candidateId: 1, jobId: 1 }, { unique: true });
+
+module.exports = mongoose.model('Application', applicationSchema);
+
+// ==========================================
+// File: server/models/Candidate.js
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
+const candidateSchema = new mongoose.Schema(
+  {
+    /* ================= AUTH & BASIC INFO ================= */
+    firstName: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    lastName: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true
+    },
+
+    password: {
+      type: String,
+      required: true,
+      select: false // IMPORTANT: never expose password
+    },
+
+    role: {
+      type: String,
+      enum: ["candidate"],
+      default: "candidate"
+    },
+
+    /* ================= PROFILE INFO ================= */
+    designation: {
+      type: String,
+      trim: true
+    },
+
+    profileImage: {
+      type: String,
+      default: ""
+    },
+
+    category: {
+      type: String,
+      trim: true
+    },
+
+    about: {
+      type: String,
+      trim: true
+    },
+
+    location: {
+      type: String,
+      trim: true
+    },
+
+    phone: {
+      type: String,
+      trim: true
+    },
+
+    /* ================= PROJECTS ================= */
+    projects: [
+      {
+        projectUrl: {
+          type: String,
+          required: true,
+          trim: true
+        },
+        hoverTitle: {
+          type: String,
+          trim: true
+        }
+      }
+    ],
+
+    /* ================= DOCUMENTS ================= */
+    resume: {
+      fileName: String,
+      fileUrl: String,
+      fileSize: String
+    },
+
+    /* ================= EDUCATION ================= */
+    education: [
+      {
+        degree: String,
+        university: String,
+        duration: String,
+        description: String
+      }
+    ],
+
+    /* ================= EXPERIENCE ================= */
+    experience: [
+      {
+        jobTitle: String,
+        companyName: String,
+        duration: String,
+        roleDescription: String
+      }
+    ],
+
+    /* ================= SKILLS & LANGUAGES ================= */
+    skills: [
+      {
+        type: String
+      }
+    ],
+
+    languages: [
+      {
+        type: String
+      }
+    ],
+
+    /* ================= SOCIAL LINKS ================= */
+    social: {
+      facebook: String,
+      linkedin: String,
+      whatsapp: String,
+      phoneCall: String
+    },
+
+    /* ================= TWO-STEP VERIFICATION ================= */
+    twoStepVerification: {
+      type: Boolean,
+      default: false
+    },
+
+    /* ================= BOOKMARKS ================= */
+    bookmarks: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Job'
+      }
+    ],
+
+    /* ================= ACCOUNT STATUS ================= */
+    isActive: {
+      type: Boolean,
+      default: true
+    },
+
+    lastLogin: {
+      type: Date
+    }
+  },
+  {
+    timestamps: true // createdAt & updatedAt
+  }
+);
+
+// ==================== PRE-SAVE HOOK ====================
+// Hash password ONLY when modified (on create or update)
+candidateSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) {
+    return next();
+  }
+
+  try {
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
+
+// ==================== INSTANCE METHODS ====================
+// Compare password for login
+candidateSchema.methods.comparePassword = async function (candidatePassword) {
+  return await bcrypt.compare(candidatePassword, this.password);
+};
+
+// Generate JWT access token
+candidateSchema.methods.generateAccessToken = function () {
+  return jwt.sign(
+    { id: this._id, role: this.role },
+    process.env.JWT_SECRET || 'secret',
+    { expiresIn: '15m' }
+  );
+};
+
+module.exports = mongoose.model('Candidate', candidateSchema);
+
+// ==========================================
+// File: server/models/Company.js
+const mongoose = require('mongoose');
+
+const companySchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  description: { type: String },
+  logo: { type: String },
+  website: { type: String },
+  location: { type: String },
+  owner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  
+  // Additional company fields
+  employees: { type: String }, // e.g., "1500 - 1850"
+  establishedDate: { type: String }, // Date string from frontend
+  workingDays: { type: String, default: 'Monday - Friday : 9AM - 5PM' },
+  weekend: { type: String, default: 'Sunday : Closed' },
+  
+  // Social links
+  facebook: { type: String },
+  linkedin: { type: String },
+  whatsapp: { type: String },
+  
+  // Gallery images
+  gallery: [{ type: String }]
+}, { timestamps: true });
+
+module.exports = mongoose.model('Company', companySchema);
+
+// ==========================================
+// File: server/models/Job.js
+const mongoose = require('mongoose');
+
+const jobSchema = new mongoose.Schema(
+  {
+    // ===== BASIC JOB INFO =====
+    title: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    category: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    vacancy: {
+      type: Number,
+      required: true,
+      min: 1
+    },
+
+    employmentType: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    position: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    location: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    // ===== COMPENSATION & EXPERIENCE =====
+    salaryRange: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    experience: {
+      type: String,
+      required: true,
+      trim: true // e.g. "0–1 years", "2+ years"
+    },
+
+    // ===== SKILLS =====
+    skills: {
+      type: [String],
+      default: []
+    },
+
+    // Combined Skills + Experience Description (Single Attribute)
+    skillsExperienceDescription: {
+      type: String,
+      trim: true
+    },
+
+    // ===== JOB DETAILS =====
+    description: {
+      type: String,
+      required: true,
+      trim: true
+    },
+
+    responsibilities: {
+      type: String,
+      trim: true
+    },
+
+    qualifications: {
+      type: String,
+      trim: true
+    },
+
+    // ===== COMPANY / RECRUITER =====
+    company: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },
+
+    // ===== JOB STATUS =====
+    status: {
+      type: String,
+      enum: ['active', 'paused', 'closed'],
+      default: 'active'
+    }
+  },
+  {
+    timestamps: true, // ✅ createdAt & updatedAt (Date Posted filter ready)
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true }
+  }
+);
+
+// Virtual field for application count
+jobSchema.virtual('applicationCount', {
+  ref: 'Application',
+  localField: '_id',
+  foreignField: 'jobId',
+  count: true
+});
+
+module.exports = mongoose.model('Job', jobSchema);
+
+// ==========================================
+// File: server/models/User.js
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+
+const userSchema = new mongoose.Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    role: {
+      type: String,
+      enum: ['candidate', 'recruiter'],
+      required: true,
+    },
+    profilePicture: {
+      type: String, // local file path
+      default: null,
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+    refreshToken: {
+      type: String,
+      default: null,
+    },
+    refreshTokenExpiry: {
+      type: Date,
+      default: null,
+    },
+    resetPasswordToken: {
+      type: String,
+      default: null,
+    },
+    resetPasswordExpires: {
+      type: Date,
+      default: null,
+    },
+    
+    // ================= CANDIDATE PROFILE FIELDS =================
+    designation: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    category: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    about: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    location: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    phone: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    education: [{
+      degree: String,
+      university: String,
+      duration: String,
+      description: String
+    }],
+    experience: [{
+      title: String,
+      company: String,
+      duration: String,
+      description: String
+    }],
+    skills: [{
+      type: String,
+      trim: true
+    }],
+    languages: [{
+      type: String,
+      trim: true
+    }],
+    projects: [{
+      projectUrl: {
+        type: String,
+        trim: true
+      },
+      hoverTitle: {
+        type: String,
+        trim: true
+      }
+    }],
+    social: {
+      linkedin: { type: String, default: '' },
+      github: { type: String, default: '' },
+      twitter: { type: String, default: '' },
+      portfolio: { type: String, default: '' }
+    },
+    bookmarks: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Job'
+    }]
+  },
+  { timestamps: true }
+);
+
+// ==================== PRE-SAVE HOOK ====================
+// Hash password ONLY when modified (on create or password update)
+userSchema.pre('save', async function () {
+  // Only hash if password is modified
+  if (!this.isModified('password')) {
+    return;
+  }
+
+  // Generate salt and hash password
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
+});
+
+// ==================== INSTANCE METHOD ====================
+// Compare password for login
+userSchema.methods.comparePassword = async function (candidatePassword) {
+  return await bcrypt.compare(candidatePassword, this.password);
+};
+
+module.exports = mongoose.model('User', userSchema);

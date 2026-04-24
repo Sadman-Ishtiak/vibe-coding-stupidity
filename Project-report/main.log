@@ -1,0 +1,1205 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.16)  25 JAN 2026 07:40
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/extreport.cls
+Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen141
+)
+\c@part=\count196
+\c@chapter=\count197
+\c@section=\count198
+\c@subsection=\count199
+\c@subsubsection=\count266
+\c@paragraph=\count267
+\c@subparagraph=\count268
+\c@figure=\count269
+\c@table=\count270
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen153
+\ttl@minus=\dimen154
+\ttl@toksa=\toks19
+\titlewidth=\dimen155
+\titlewidthlast=\dimen156
+\titlewidthfirst=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2025/03/06 v3.6.0 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2025/03/04 v1.12.0 fvextra - extensions and patches for fancyv
+rb
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count275
+\FV@InFile=\read2
+\FV@TabBox=\box53
+\c@FancyVerbLine=\count276
+\FV@StepNumber=\count277
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/01/29 line numbers on paragraphs v5.4
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count278
+\output=\toks20
+\linenoprevgraf=\count279
+\linenumbersep=\dimen158
+\linenumberwidth=\dimen159
+\c@linenumber=\count280
+\c@pagewiselinenumber=\count281
+\c@LN@truepage=\count282
+\c@internallinenumber=\count283
+\c@internallinenumbers=\count284
+\quotelinenumbersep=\dimen160
+\bframerule=\dimen161
+\bframesep=\dimen162
+\bframebox=\box54
+LaTeX Info: Redefining \\ on input line 3187.
+)
+\c@FancyVerbWriteLine=\count285
+\c@FancyVerbBufferLine=\count286
+\c@FV@TrueTabGroupLevel=\count287
+\c@FV@TrueTabCounter=\count288
+\FV@TabBox@Group=\box55
+\FV@bgcolorstructbox=\box56
+\FV@TmpLength=\skip53
+\c@FV@HighlightLinesStart=\count289
+\c@FV@HighlightLinesStop=\count290
+\FV@LoopCount=\count291
+\FV@NCharsBox=\box57
+\FV@BreakIndent=\dimen163
+\FV@BreakIndentNChars=\count292
+\FV@BreakSymbolSepLeft=\dimen164
+\FV@BreakSymbolSepLeftNChars=\count293
+\FV@BreakSymbolSepRight=\dimen165
+\FV@BreakSymbolSepRightNChars=\count294
+\FV@BreakSymbolIndentLeft=\dimen166
+\FV@BreakSymbolIndentLeftNChars=\count295
+\FV@BreakSymbolIndentRight=\dimen167
+\FV@BreakSymbolIndentRightNChars=\count296
+\c@FancyVerbLineBreakLast=\count297
+\FV@LineBox=\box58
+\FV@LineIndentBox=\box59
+\c@FV@BreakBufferDepth=\count298
+\FV@LineWidth=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2025/03/03 v0.5.0 latex2pydata - write data to file in Py
+thon literal format
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks23
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks24
+\pgfopts@list@add@b@toks=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count299
+\float@exts=\toks26
+\float@box=\box60
+\@float@everytoks=\toks27
+\@floatcapt=\box61
+)
+\c@minted@FancyVerbLineTemp=\count300
+\@float@every@listing=\toks28
+\c@listing=\count301
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip54
+\cftbeforetoctitleskip=\skip55
+\cftaftertoctitleskip=\skip56
+\cftbeforepartskip=\skip57
+\cftpartnumwidth=\skip58
+\cftpartindent=\skip59
+\cftbeforechapskip=\skip60
+\cftchapindent=\skip61
+\cftchapnumwidth=\skip62
+\cftbeforesecskip=\skip63
+\cftsecindent=\skip64
+\cftsecnumwidth=\skip65
+\cftbeforesubsecskip=\skip66
+\cftsubsecindent=\skip67
+\cftsubsecnumwidth=\skip68
+\cftbeforesubsubsecskip=\skip69
+\cftsubsubsecindent=\skip70
+\cftsubsubsecnumwidth=\skip71
+\cftbeforeparaskip=\skip72
+\cftparaindent=\skip73
+\cftparanumwidth=\skip74
+\cftbeforesubparaskip=\skip75
+\cftsubparaindent=\skip76
+\cftsubparanumwidth=\skip77
+\cftbeforeloftitleskip=\skip78
+\cftafterloftitleskip=\skip79
+\cftbeforefigskip=\skip80
+\cftfigindent=\skip81
+\cftfignumwidth=\skip82
+\c@lofdepth=\count302
+\c@lotdepth=\count303
+\cftbeforelottitleskip=\skip83
+\cftafterlottitleskip=\skip84
+\cftbeforetabskip=\skip85
+\cfttabindent=\skip86
+\cfttabnumwidth=\skip87
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box62
+))
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count305
+\l__lipsum_a_int=\count306
+\l__lipsum_b_int=\count307
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count308
+\c@continuedfloat=\count309
+Package caption Info: float package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
+)
+\XKV@depth=\count310
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen177
+\ar@mcellbox=\box63
+\extrarowheight=\dimen178
+\NC@list=\toks31
+\extratabsurround=\skip88
+\backup@length=\skip89
+\ar@cellbox=\box64
+)
+\TX@col@width=\dimen179
+\TX@old@table=\dimen180
+\TX@old@col=\dimen181
+\TX@target=\dimen182
+\TX@delta=\dimen183
+\TX@cols=\count311
+\TX@ftn=\toks32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.2698pt, 482.55894pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=482.55894pt
+* \textheight=731.23584pt
+* \oddsidemargin=-0.00018pt
+* \evensidemargin=-0.00018pt
+* \topmargin=-54.36449pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count312
+\scratchdimen=\dimen184
+\scratchbox=\box65
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen185
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks34
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
+
+ []
+
+
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 101.
+
+Overfull \hbox (2.34674pt too wide) in paragraph at lines 100--109
+[] 
+ []
+
+
+
+[2
+
+]
+
+[3
+
+]
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 133.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 134.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--144
+
+ []
+
+
+
+[4
+
+] (./main.toc
+
+[5])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+[6] (./main.lof
+
+[7])
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+
+
+[8] (./main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+
+
+[9]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--180
+
+ []
+
+
+
+[1
+
+
+]
+Chapter 2.
+<./images/001LinkedIn.png, id=38, 932.48375pt x 589.20125pt>
+File: ./images/001LinkedIn.png Graphic file (type png)
+<use ./images/001LinkedIn.png>
+Package pdftex.def Info: ./images/001LinkedIn.png  used on input line 186.
+(pdftex.def)             Requested size: 410.17804pt x 259.17741pt.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 	T
+        he biggest platform is for students is LinkedIn. LinkedIn\cite{linke...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<./images/002bdjobs.png, id=39, 1200.485pt x 588.1975pt>
+File: ./images/002bdjobs.png Graphic file (type png)
+<use ./images/002bdjobs.png>
+Package pdftex.def Info: ./images/002bdjobs.png  used on input line 193.
+(pdftex.def)             Requested size: 410.17804pt x 200.97177pt.
+
+
+[2
+
+ <./images/001LinkedIn.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 	B
+        djobs\cite{bdjobs} on the other hand does not have that same problem...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--228
+
+ []
+
+
+
+[3 <./images/002bdjobs.png>]
+
+[4]
+
+[5{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Chapter 3.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 	B
+        angladesh right now is facing a complicated employment situation whe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--264
+
+ []
+
+
+
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 273--277
+
+ []
+
+
+
+[7]
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 300--304
+
+ []
+
+
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 310--312
+
+ []
+
+
+
+[10]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 	\\
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 	U
+        nfortunately, due to both human reasons, time resoureces available t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
+ []
+
+
+
+[11]
+
+[12]
+Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--362
+
+ []
+
+
+
+[13
+
+]
+<./images/diagram-01.png, id=79, 673.51625pt x 827.09pt>
+File: ./images/diagram-01.png Graphic file (type png)
+<use ./images/diagram-01.png>
+Package pdftex.def Info: ./images/diagram-01.png  used on input line 363.
+(pdftex.def)             Requested size: 410.17804pt x 503.71646pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 	T
+        he Role-Based accesss control we have implemented have two layers of...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+
+
+[14 <./images/diagram-01.png>]
+<./images/diagram-02.png, id=85, 818.05624pt x 1174.3875pt>
+File: ./images/diagram-02.png Graphic file (type png)
+<use ./images/diagram-02.png>
+Package pdftex.def Info: ./images/diagram-02.png  used on input line 373.
+(pdftex.def)             Requested size: 386.04861pt x 554.2201pt.
+
+
+[15]
+
+[16 <./images/diagram-02.png>]
+
+[17]
+
+[18]
+Chapter 5.
+<./images/interface-01.jpg, id=104, 1913.1475pt x 903.375pt>
+File: ./images/interface-01.jpg Graphic file (type jpg)
+<use ./images/interface-01.jpg>
+Package pdftex.def Info: ./images/interface-01.jpg  used on input line 477.
+(pdftex.def)             Requested size: 482.55894pt x 227.85571pt.
+
+
+[19
+
+ <./images/interface-01.jpg>]
+<./images/Screenshot From 2026-01-23 15-15-18.png, id=108, 933.4875pt x 749.801
+25pt>
+File: ./images/Screenshot From 2026-01-23 15-15-18.png Graphic file (type png)
+<use ./images/Screenshot From 2026-01-23 15-15-18.png>
+Package pdftex.def Info: ./images/Screenshot From 2026-01-23 15-15-18.png  used
+ on input line 486.
+(pdftex.def)             Requested size: 434.3001pt x 348.83704pt.
+<./images/Screenshot From 2026-01-23 15-14-58.png, id=109, 929.4725pt x 573.141
+25pt>
+File: ./images/Screenshot From 2026-01-23 15-14-58.png Graphic file (type png)
+<use ./images/Screenshot From 2026-01-23 15-14-58.png>
+Package pdftex.def Info: ./images/Screenshot From 2026-01-23 15-14-58.png  used
+ on input line 490.
+(pdftex.def)             Requested size: 434.3001pt x 267.80225pt.
+<./images/Screenshot From 2026-01-23 15-15-38.png, id=110, 934.49126pt x 574.14
+5pt>
+File: ./images/Screenshot From 2026-01-23 15-15-38.png Graphic file (type png)
+<use ./images/Screenshot From 2026-01-23 15-15-38.png>
+Package pdftex.def Info: ./images/Screenshot From 2026-01-23 15-15-38.png  used
+ on input line 494.
+(pdftex.def)             Requested size: 434.3001pt x 266.83449pt.
+
+
+[20 <./images/Screenshot From 2026-01-23 15-15-18.png> <./images/Screenshot Fro
+m 2026-01-23 15-14-58.png>]
+<./images/Screenshot From 2026-01-23 15-16-01.png, id=116, 934.49126pt x 574.14
+5pt>
+File: ./images/Screenshot From 2026-01-23 15-16-01.png Graphic file (type png)
+<use ./images/Screenshot From 2026-01-23 15-16-01.png>
+Package pdftex.def Info: ./images/Screenshot From 2026-01-23 15-16-01.png  used
+ on input line 498.
+(pdftex.def)             Requested size: 434.3001pt x 266.83449pt.
+<./images/photo_2026-01-23_20-05-49.jpg, id=117, 718.685pt x 1028.84375pt>
+File: ./images/photo_2026-01-23_20-05-49.jpg Graphic file (type jpg)
+<use ./images/photo_2026-01-23_20-05-49.jpg>
+Package pdftex.def Info: ./images/photo_2026-01-23_20-05-49.jpg  used on input 
+line 502.
+(pdftex.def)             Requested size: 241.27946pt x 345.40657pt.
+
+
+[21 <./images/Screenshot From 2026-01-23 15-15-38.png> <./images/Screenshot Fro
+m 2026-01-23 15-16-01.png>]
+<./images/interface-05.jpg, id=123, 194.7275pt x 189.70876pt>
+File: ./images/interface-05.jpg Graphic file (type jpg)
+<use ./images/interface-05.jpg>
+Package pdftex.def Info: ./images/interface-05.jpg  used on input line 510.
+(pdftex.def)             Requested size: 241.27946pt x 235.06851pt.
+<./images/interface-06.jpg, id=124, 787.94376pt x 937.5025pt>
+File: ./images/interface-06.jpg Graphic file (type jpg)
+<use ./images/interface-06.jpg>
+Package pdftex.def Info: ./images/interface-06.jpg  used on input line 514.
+(pdftex.def)             Requested size: 482.55894pt x 574.1502pt.
+
+
+[22 <./images/photo_2026-01-23_20-05-49.jpg> <./images/interface-05.jpg>]
+<./images/interface-07.jpg, id=129, 1128.215pt x 781.92125pt>
+File: ./images/interface-07.jpg Graphic file (type jpg)
+<use ./images/interface-07.jpg>
+Package pdftex.def Info: ./images/interface-07.jpg  used on input line 518.
+(pdftex.def)             Requested size: 434.3001pt x 300.99886pt.
+
+
+[23 <./images/interface-06.jpg>]
+<./images/interface-08.jpg, id=133, 1009.7725pt x 798.985pt>
+File: ./images/interface-08.jpg Graphic file (type jpg)
+<use ./images/interface-08.jpg>
+Package pdftex.def Info: ./images/interface-08.jpg  used on input line 522.
+(pdftex.def)             Requested size: 434.3001pt x 343.6422pt.
+
+
+[24 <./images/interface-07.jpg> <./images/interface-08.jpg>]
+<./images/interface-09.jpg, id=137, 153.57375pt x 171.64125pt>
+File: ./images/interface-09.jpg Graphic file (type jpg)
+<use ./images/interface-09.jpg>
+Package pdftex.def Info: ./images/interface-09.jpg  used on input line 531.
+(pdftex.def)             Requested size: 241.27946pt x 269.68422pt.
+<./images/interface-11.jpg, id=138, 905.3825pt x 488.82625pt>
+File: ./images/interface-11.jpg Graphic file (type jpg)
+<use ./images/interface-11.jpg>
+Package pdftex.def Info: ./images/interface-11.jpg  used on input line 533.
+(pdftex.def)             Requested size: 434.3001pt x 234.48474pt.
+<./images/interface-10.jpg, id=139, 908.39375pt x 936.49875pt>
+File: ./images/interface-10.jpg Graphic file (type jpg)
+<use ./images/interface-10.jpg>
+Package pdftex.def Info: ./images/interface-10.jpg  used on input line 535.
+(pdftex.def)             Requested size: 482.55894pt x 497.48515pt.
+
+
+[25 <./images/interface-09.jpg> <./images/interface-11.jpg>]
+<./images/interface-12.jpg, id=143, 905.3825pt x 842.14626pt>
+File: ./images/interface-12.jpg Graphic file (type jpg)
+<use ./images/interface-12.jpg>
+Package pdftex.def Info: ./images/interface-12.jpg  used on input line 537.
+(pdftex.def)             Requested size: 434.3001pt x 403.96861pt.
+
+
+! LaTeX Error: No counter ' figure' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.538 		\captionof{	figure}{
+                            The Candidate's page to view and manage bookmark...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package caption Error: No float type ' figure' defined.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.538 ... page to view and manage bookmarked jobs}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[26 <./images/interface-10.jpg>]
+
+[27 <./images/interface-12.jpg>]
+<./images/interface-13.jpg, id=150, 1019.81pt x 987.69pt>
+File: ./images/interface-13.jpg Graphic file (type jpg)
+<use ./images/interface-13.jpg>
+Package pdftex.def Info: ./images/interface-13.jpg  used on input line 546.
+(pdftex.def)             Requested size: 482.55894pt x 467.36418pt.
+
+
+[28 <./images/interface-13.jpg>]
+<./images/interface-14.jpg, id=155, 1029.8475pt x 586.19pt>
+File: ./images/interface-14.jpg Graphic file (type jpg)
+<use ./images/interface-14.jpg>
+Package pdftex.def Info: ./images/interface-14.jpg  used on input line 555.
+(pdftex.def)             Requested size: 482.55894pt x 274.66855pt.
+
+
+[29 <./images/interface-14.jpg>]
+
+[30]
+File: ./images/react.png Graphic file (type png)
+<use ./images/react.png>
+Package pdftex.def Info: ./images/react.png  used on input line 600.
+(pdftex.def)             Requested size: 29.93935pt x 28.45274pt.
+File: ./images/vite.jpg Graphic file (type jpg)
+<use ./images/vite.jpg>
+Package pdftex.def Info: ./images/vite.jpg  used on input line 600.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: ./images/rr.png Graphic file (type png)
+<use ./images/rr.png>
+Package pdftex.def Info: ./images/rr.png  used on input line 600.
+(pdftex.def)             Requested size: 47.69423pt x 28.45274pt.
+File: ./images/Bootstrap_logo.svg.png Graphic file (type png)
+<use ./images/Bootstrap_logo.svg.png>
+Package pdftex.def Info: ./images/Bootstrap_logo.svg.png  used on input line 60
+0.
+(pdftex.def)             Requested size: 35.69969pt x 28.45274pt.
+
+Underfull \hbox (badness 4291) in paragraph at lines 600--600
+[]|\OT1/cmr/m/n/14.4 Responsive CSS frame-work for con-sis-tent
+ []
+
+File: ./images/sass.png Graphic file (type png)
+<use ./images/sass.png>
+Package pdftex.def Info: ./images/sass.png  used on input line 600.
+(pdftex.def)             Requested size: 45.65047pt x 28.45274pt.
+File: ./images/axios.png Graphic file (type png)
+<use ./images/axios.png>
+Package pdftex.def Info: ./images/axios.png  used on input line 600.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: ./images/swiper.jpg Graphic file (type jpg)
+<use ./images/swiper.jpg>
+Package pdftex.def Info: ./images/swiper.jpg  used on input line 600.
+(pdftex.def)             Requested size: 28.45192pt x 28.45274pt.
+File: ./images/choices.png Graphic file (type png)
+<use ./images/choices.png>
+Package pdftex.def Info: ./images/choices.png  used on input line 600.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: ./images/eslint.png Graphic file (type png)
+<use ./images/eslint.png>
+Package pdftex.def Info: ./images/eslint.png  used on input line 600.
+(pdftex.def)             Requested size: 32.22719pt x 28.45274pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+[]|\OT1/cmr/m/n/14.4 Pluggable lint-ing util-ity for main-tain-ing
+ []
+
+File: ./images/nodejs.png Graphic file (type png)
+<use ./images/nodejs.png>
+Package pdftex.def Info: ./images/nodejs.png  used on input line 613.
+(pdftex.def)             Requested size: 37.48798pt x 28.45274pt.
+File: ./images/express.png Graphic file (type png)
+<use ./images/express.png>
+Package pdftex.def Info: ./images/express.png  used on input line 613.
+(pdftex.def)             Requested size: 34.14316pt x 28.45274pt.
+File: ./images/mongodb.png Graphic file (type png)
+<use ./images/mongodb.png>
+Package pdftex.def Info: ./images/mongodb.png  used on input line 613.
+(pdftex.def)             Requested size: 31.52835pt x 28.45274pt.
+File: ./images/jwt.png Graphic file (type png)
+<use ./images/jwt.png>
+Package pdftex.def Info: ./images/jwt.png  used on input line 613.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+
+
+[31 <./images/react.png> <./images/vite.jpg> <./images/rr.png> <./images/Bootst
+rap_logo.svg.png> <./images/sass.png> <./images/axios.png> <./images/swiper.jpg
+> <./images/choices.png> <./images/eslint.png>]
+File: ./images/git.png Graphic file (type png)
+<use ./images/git.png>
+Package pdftex.def Info: ./images/git.png  used on input line 626.
+(pdftex.def)             Requested size: 31.52835pt x 28.45274pt.
+
+Underfull \hbox (badness 3386) in paragraph at lines 626--626
+[]|\OT1/cmr/m/n/14.4 Distributed ver-sion con-trol sys-tem for
+ []
+
+File: ./images/npm.png Graphic file (type png)
+<use ./images/npm.png>
+Package pdftex.def Info: ./images/npm.png  used on input line 626.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+
+Underfull \hbox (badness 1521) in paragraph at lines 626--626
+[]|\OT1/cmr/m/n/14.4 Default pack-age man-ager for man-ag-ing
+ []
+
+File: ./images/postman.png Graphic file (type png)
+<use ./images/postman.png>
+Package pdftex.def Info: ./images/postman.png  used on input line 626.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: ./images/vscode.jpg Graphic file (type jpg)
+<use ./images/vscode.jpg>
+Package pdftex.def Info: ./images/vscode.jpg  used on input line 626.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+
+
+[32 <./images/nodejs.png> <./images/express.png> <./images/mongodb.png> <./imag
+es/jwt.png> <./images/git.png> <./images/npm.png> <./images/postman.png> <./ima
+ges/vscode.jpg>]
+Chapter 6.
+
+
+[33
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 651--655
+
+ []
+
+(./main.bbl
+
+[34]
+Chapter 7.
+
+
+[35
+
+]
+
+[36])
+
+[37]
+runsystem(latexminted cleantemp  --timestamp 20260125074038 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
+
+ (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10803 strings out of 473197
+ 237362 string characters out of 5718605
+ 835203 words of memory out of 5000000
+ 33908 multiletter control sequences out of 15000+600000
+ 564265 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 85i,10n,93p,1240b,410s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1440.pfb>
+Output written on main.pdf (46 pages, 1730982 bytes).
+PDF statistics:
+ 258 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+

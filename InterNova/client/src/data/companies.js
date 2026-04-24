@@ -1,0 +1,36 @@
+/** @type {import('@/utils/validators').Company[]} */
+export const mockCompanies = [
+  {
+    id: 'co_01',
+    name: 'Web Technology pvt.Ltd',
+    logoUrl: '/assets/images/featured-job/img-01.png',
+    location: 'Richardson, TX',
+    website: 'https://example.com',
+    description: 'Leading web development company specializing in modern web technologies and digital solutions.',
+    employees: '50-100',
+    industry: 'Technology',
+    founded: '2015',
+  },
+  {
+    id: 'co_02',
+    name: 'Pixel Technology pvt.Ltd',
+    logoUrl: '/assets/images/featured-job/img-02.png',
+    location: 'Louisiana, US',
+    website: 'https://example.com',
+    description: 'Innovative technology company focused on digital transformation and creative solutions.',
+    employees: '100-200',
+    industry: 'Technology',
+    founded: '2018',
+  },
+  {
+    id: 'co_03',
+    name: 'Creative Solutions Inc',
+    logoUrl: '/assets/images/featured-job/img-01.png',
+    location: 'San Francisco, CA',
+    website: 'https://example.com',
+    description: 'A creative agency providing design and marketing services.',
+    employees: '20-50',
+    industry: 'Marketing',
+    founded: '2020',
+  },
+]

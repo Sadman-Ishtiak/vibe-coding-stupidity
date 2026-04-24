@@ -1,0 +1,1 @@
+// (Removed) Area range slider (#slider1 / #slider1-span)

@@ -1,0 +1,42 @@
+\contentsline {chapter}{Board of Examiners}{I}{}%
+\contentsline {chapter}{Supervisor's Approval}{II}{}%
+\contentsline {chapter}{Candidate Declaration}{III}{}%
+\contentsline {chapter}{Acknowledgement}{IV}{}%
+\contentsline {chapter}{\numberline {1}Abstract}{1}{}%
+\contentsline {chapter}{\numberline {2}Introduction}{2}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2.2}Motivation}{4}{}%
+\contentsline {section}{\numberline {2.3}Objectives}{5}{}%
+\contentsline {chapter}{\numberline {3}Literature Review}{6}{}%
+\contentsline {section}{\numberline {3.1}Background Study}{6}{}%
+\contentsline {subsection}{\numberline {3.1.1}The Bangladesh Youth Employment Crisis}{6}{}%
+\contentsline {subsection}{\numberline {3.1.2}The Entry-Level Paradox and Salary Exploitation}{7}{}%
+\contentsline {subsection}{\numberline {3.1.3}Automation and Closing Traditional Entry Paths}{7}{}%
+\contentsline {subsection}{\numberline {3.1.4}Platform-Specific Problems in Bangladesh}{7}{}%
+\contentsline {subsubsection}{The Bdjobs \textbf {Black Hole} Phenomenon}{7}{}%
+\contentsline {subsubsection}{LinkedIn Bangladesh's Content Problem}{8}{}%
+\contentsline {subsubsection}{Facebook and Telegram Scam Ecosystem}{8}{}%
+\contentsline {subsection}{\numberline {3.1.5}The 6-Day Work Week Deception}{8}{}%
+\contentsline {subsection}{\numberline {3.1.6}Internship Exploitation and \textbf {Coffee Culture}}{9}{}%
+\contentsline {subsection}{\numberline {3.1.7}Mental Health Impact}{9}{}%
+\contentsline {subsection}{\numberline {3.1.8}International Context: The Ghosting Epidemic}{9}{}%
+\contentsline {subsection}{\numberline {3.1.9}The Skills Mismatch}{10}{}%
+\contentsline {section}{\numberline {3.2}Our Solution}{10}{}%
+\contentsline {section}{\numberline {3.3}Functional Requirements}{12}{}%
+\contentsline {chapter}{\numberline {4}Methodology}{13}{}%
+\contentsline {section}{\numberline {4.1}Application Flow}{13}{}%
+\contentsline {subsection}{\numberline {4.1.1}User Authentication and Authorization Flow}{13}{}%
+\contentsline {subsection}{\numberline {4.1.2}Application Lifecycle Flow}{15}{}%
+\contentsline {section}{\numberline {4.2}Function and Modules}{17}{}%
+\contentsline {chapter}{\numberline {5}Design and Implementation}{19}{}%
+\contentsline {section}{\numberline {5.1}User Interface}{19}{}%
+\contentsline {section}{\numberline {5.2}Security Measures and Vulnerabilities Prevention}{29}{}%
+\contentsline {section}{\numberline {5.3}Development tools and Environment}{31}{}%
+\contentsline {subsection}{\numberline {5.3.1}Frontend Development (Client)}{31}{}%
+\contentsline {subsection}{\numberline {5.3.2}Backend Development (Server)}{32}{}%
+\contentsline {subsection}{\numberline {5.3.3}Development \& DevOps}{32}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{33}{}%
+\contentsline {section}{\numberline {6.1}Limitations of this project}{33}{}%
+\contentsline {section}{\numberline {6.2}Future scope}{33}{}%
+\contentsline {section}{\numberline {6.3}Discussions}{34}{}%
+\contentsline {chapter}{\numberline {7}References}{35}{}%

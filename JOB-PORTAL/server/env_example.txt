@@ -1,0 +1,31 @@
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# Database Connection
+# If using a local MongoDB: mongodb://localhost:27017/internnova
+# If using Atlas or other remote: mongodb+srv://<user>:<password>@<cluster>.mongodb.net/internnova
+MONGODB_URI=mongodb://localhost:27017/internnova
+
+# Security & Authentication
+JWT_SECRET=your_super_secure_jwt_secret_key_change_this
+JWT_EXPIRE=7d
+ACCESS_TOKEN_EXPIRES=15m
+JWT_REFRESH_SECRET=your_super_secure_refresh_secret_key_change_this
+REFRESH_TOKEN_EXPIRES=7d
+
+# CORS Configuration
+# Comma-separated list of allowed origins (frontend URLs)
+CORS_ORIGIN=http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174
+
+# Email Service (SMTP)
+# Required for sending emails (e.g., password reset, notifications)
+SMTP_HOST=smtp.example.com
+SMTP_USER=your_email@example.com
+SMTP_PASS=your_email_password
+
+# API Base URL (Used in scripts/templates)
+API_BASE_URL=http://localhost:5000/api
+
+
+

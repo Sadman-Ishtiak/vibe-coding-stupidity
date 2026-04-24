@@ -1,0 +1,229 @@
+/* InternNova Brand Logo Styles */
+.brand-logo-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.brand-logo-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.brand-logo-link:hover .brand-logo-text {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0%, 100% {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  50% {
+    background: linear-gradient(135deg, #f093fb 0%, #667eea 50%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .brand-logo-text {
+    background: linear-gradient(135deg, #8b9aff 0%, #9966ff 50%, #ff99ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  @keyframes shimmer {
+    0%, 100% {
+      background: linear-gradient(135deg, #8b9aff 0%, #9966ff 50%, #ff99ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    50% {
+      background: linear-gradient(135deg, #ff99ff 0%, #8b9aff 50%, #9966ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brand-logo-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo-text {
+    font-size: 1.75rem;
+  }
+}
+
+/* Navbar brand wordmark (supports text-based logo-dark/logo-light) */
+.navbar-brand .logo-dark,
+.navbar-brand .logo-light {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  text-decoration: none;
+  padding: 2px 0;
+
+  /* Use theme tokens (Bootstrap vars) to avoid hard-coded palette */
+  background-image: linear-gradient(
+    135deg,
+    var(--bs-primary, currentColor) 0%,
+    var(--bs-info, currentColor) 55%,
+    var(--bs-primary, currentColor) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+
+  transition: filter 0.2s ease;
+}
+
+.navbar-brand:hover .logo-dark,
+.navbar-brand:hover .logo-light {
+  filter: brightness(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-brand .logo-dark,
+  .navbar-brand .logo-light {
+    transition: none;
+  }
+}
+
+/* Page title hero: reduce background height and vertically center content */
+.page-title-box {
+  padding-top: 112px !important;
+  padding-bottom: 55px !important;
+  display: flex;
+  align-items: center;
+}
+
+.page-title-box > .container,
+.page-title-box > .container-fluid {
+  width: 100%;
+}
+
+/* Admin layout styles */
+.admin-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.admin-sidebar {
+  width: 260px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #0f1720; /* subtle dark-blue instead of pure black */
+  border-right: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 2px 6px rgba(2,6,23,0.4);
+}
+
+.admin-sidebar .p-4 {
+  padding: 1rem !important;
+}
+
+.admin-layout .flex-grow-1 {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+
+/* Sidebar links */
+.admin-sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.admin-sidebar li {
+  list-style: none;
+}
+.admin-sidebar a {
+  color: rgba(255,255,255,0.92);
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+}
+.admin-sidebar a:hover {
+  background: rgba(255,255,255,0.03);
+  color: #ffffff;
+}
+/* NavLink active state (react-router adds aria-current="page") */
+.admin-sidebar a[aria-current="page"], .admin-sidebar a.active {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  font-weight: 600;
+}
+
+.admin-layout > main {
+  min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .admin-sidebar {
+    display: none;
+  }
+  .admin-layout {
+    flex-direction: column;
+  }
+}
+
+/* Sign Up button boxed style */
+.btn-signup-box {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btn-signup-box:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Sticky footer layout: make app a column flex container so footer stays at bottom */
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1 1 auto;
+}
+
+/* Navbar active page box indicator */
+.navbar-center .nav-link {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.navbar-center .nav-link[aria-current="page"] {
+  background: rgba(118,109,244,0.10);
+  color: var(--bs-primary, #6e56e8);
+  border-radius: 8px;
+}

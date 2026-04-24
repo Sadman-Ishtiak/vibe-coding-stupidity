@@ -1,0 +1,73 @@
+import StaticMarkupPage from '@/pages/static/StaticMarkupPage'
+
+export const markup = `
+<div>
+
+            
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- START RESET-PASSWORD -->
+                    <section class="bg-auth">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-10 col-lg-12">
+                                    <div class="card auth-box">
+                                        <div class="row g-0">
+                                            <div class="col-lg-6 text-center">
+                                                <div class="card-body p-4">
+                                                    <a href="/" data-discover="true" class="brand-logo-link">
+                                                        <span class="brand-logo-text">InternNova</span>
+                                                    </a>
+                                                    <div class="mt-5">
+                                                        <img src="assets/images/auth/reset-password.png" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-lg-6">
+                                                <div class="auth-content card-body p-5 h-100 text-white">
+                                                    <div class="text-center mb-4">
+                                                        <h5>Reset Password</h5>
+                                                        <p class="text-white-50">Reset your password with InternNova.</p>
+                                                    </div>
+                                                    <form class="auth-form text-white">
+                                                        <div class="alert alert-warning text-center mb-4" role="alert">  Enter your Email and instructions will be sent to you!  </div>
+                                                        <div class="mb-4">
+                                                            <label class="form-label" for="email">Username/Email</label>
+                                                            <input type="email" class="form-control" id="email"
+                                                                placeholder="Enter username or email">
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <button type="submit" class="btn btn-white w-100">Send Request</button>
+                                                        </div>
+                                                    </form>
+<div class="mt-5 text-center text-white-50">
+                                                        <p>Remembered It ? <a href="sign-in.html" class="fw-medium text-white text-decoration-underline"> Go to Login </a></p>
+                                                    </div>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </div>
+</div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </section>
+                    <!-- END RESET-PASSWORD -->
+                    
+                </div>
+</div>
+</div>
+        <!-- END layout-wrapper -->
+
+        
+<button onclick="topFunction()" id="back-to-top">
+            <i class="mdi mdi-arrow-up"></i>
+        </button>
+
+
+`
+
+    export default function ResetPassword() {
+            return <StaticMarkupPage slug="reset-password" />
+    }

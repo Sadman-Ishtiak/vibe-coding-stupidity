@@ -1,0 +1,502 @@
+InternNova : An Internship Management
+System
+Sadman Ishtiak, Md. Jahid Hassan Khan Ornob
+January 12, 2026
+
+Table of Contents
+Acknowledgement . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+2
+
+1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.3 Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+3
+5
+6
+
+2 Literature Review . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.1 Background Study . . . . . . . . . . . . . . . . . . . . . . . . .
+The Bangladesh Youth Employment Crisis . . . . . . . . . . . .
+The Entry-Level Paradox and Salary Exploitation . . . . . . . .
+Automation and Closing Traditional Entry Paths . . . . . . . .
+Platform-Specific Problems in Bangladesh . . . . . . . . . . . .
+The Bdjobs ”Black Hole” Phenomenon . . . . . . . . . .
+LinkedIn Bangladesh’s Content Problem . . . . . . . . .
+Facebook and Telegram Scam Ecosystem . . . . . . . . .
+The Nepotism Barrier: ”Mama/Khalu” Culture . . . . . . . . .
+The 6-Day Work Week Deception . . . . . . . . . . . . . . . . .
+Internship Exploitation and ”Coffee Culture” . . . . . . . . . . .
+Mental Health Impact . . . . . . . . . . . . . . . . . . . . . . .
+International Context: The Ghosting Epidemic . . . . . . . . . .
+The Skills Mismatch . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 Our Solution . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3 Functional Requirements . . . . . . . . . . . . . . . . . . . . . .
+
+7
+7
+7
+7
+8
+8
+8
+9
+9
+9
+9
+10
+10
+10
+11
+11
+11
+
+3 Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.1 Application Flow . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3.2 Function and Modules . . . . . . . . . . . . . . . . . . . . . . . 12
+4 Design and Implementation . . . . . . . . . . . . . . . . . . . . 13
+4.1 User Interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.2 Backend Design . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.3 Security Measures and Vulnerabilities Prevention . . . . . . . . 13
+I
+
+4.4
+
+Development tools and Environment . . . . . . . . . . . . . . .
+
+13
+
+5 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+5.1 Limitations of this project . . . . . . . . . . . . . . . . . . . . . 14
+5.2 Future scope . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+5.3 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6 References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+II
+
+Acknowledgement
+A project is a golden opportunity for learning and self-development.
+Many people deserve our cordial thanks for their help in completing
+this project. First and foremost, we would like to thank our honorable
+Supervisor Dr. Mst. Jannatul Ferdous, Professor, Department
+of Computer Science & Engineering, Jatiya Kabi Kazi Nazrul Islam
+University who is so dedicated to helping us in our times of need. We
+are honored to make this project under her guidance which provides
+us with her valuable time and knowledge, motivating thought, and encouragement.
+
+We wish to express thanks to Professor Dr. Md. Sujan Ali,
+Head, Department of Computer Science & Engineering, Jatiya Kabi
+Kazi Nazrul Islam University for providing us with lab opportunities
+and lab materials related to our project work.
+Finally, we express our thanks to the Department of Computer Science and Engineering for allowing us to study here and for supporting
+us greatly.
+
+1
+
+Abstract
+In Bangladesh, students and fresh graduates face significant challenge in getting their first entry-level jobs and internships due to job markets with high
+competition, limited access to opportunities, divided market, and lack of proper
+information. So we present our project InternNova, an innovative job and internship management platform designed specifically to help both students and
+employers by providing a user-friendly solution for job and opportunity finding,
+application tracking, and career development for students and a solid platform
+to hunt talents hidden outside the scope of HR filtering and traditional talent
+scouring process. This platform solves problems such as information problems,
+confusing application processes, and limited networking opportunities that hinder students from achieving their dream career.
+
+InternNova offers a complete set of features including intelligent job matching algorithms, a place for application management and company profiles with
+verified information. The system combines modern web technologies with robust security measures to ensure data privacy and seamless user experience.
+By getting internship opportunities from various sources and providing tools
+for skill assessment and career guidance, students can make proper decisions
+about their professional journey.
+
+The implementation of IntrnNova will create a large potential in changing
+how Bangladeshi students access and secure internships or their first entry level
+jobs, thus contributing to better employment outcomes and creating stronger
+connections between academic institutions and industry partners.
+
+2
+
+Introduction
+In this chapter, we will discuss the background and context of the project, the
+reasons behind taking up this project, and the specific objectives we target to
+achieve through our work.
+
+1.1
+
+Introduction
+
+If we look at the current state of the students and the graduates in Bangladesh,
+we can see that many of them struggle to find suitable internship opportunities
+that align with their career goals and dreams. You may think maybe this
+is caused by not haivng a platform but there are multiple platforms such as
+LinkedIn [1], Bdjobs [2] and many more. And they are not very useful for
+students looking for internships or their first entry level jobs.
+
+Figure 1.1: LinkedIn Internship Search
+The biggest platform is for students is LinkedIn. LinkedIn [1] require students to spend more time either self promoting on the platform and connection
+building over what actually matters which is skill building and preparing for
+the job or a long a tedious time filtering through irrelevant job posts that do
+not match their qualifications or interests.
+3
+
+Figure 1.2: Bdjobs [2] website page
+Bdjobs [2] on the other hand does not have that same problem as LinkedIn
+but it lacks various listings and almost all the listings are for full time jobs or
+experienced hires only. This makes it very hard for students to find internships
+or entry level jobs on the platform. And for the few listings that are for internships or entry level jobs, they are often buried under a lot of other irrelevant
+listings making it hard for students to find them and most of them are even
+ghost listings specifically tailored for pre seleceted or referred candidates only.
+
+While you may think this is the only problem that students face when looking for internships or entry level jobs, there are other and one specially notable
+nowadays is ghost job listings [3]. While LinkedIn [1] solves this problem in
+some extent by allowing users to report fake job listing and its social media like
+structure helps users to identify fake listings through comments and reviews
+from other users, Bdjobs [2] lacks such features making it hard for students
+to identify fake listings. This leads to students wasting their time and effort
+applying for fake listings only to find out later that they are not real. This
+not only wastes their time but also demotivates them from applying for other
+listings in the future.
+
+This means HR of various companies gives out these ghost job listing in
+bdjobs [3] and makes the job market look better than it actually is. This
+creates a false sense of hope for students and fresh graduates who are looking
+for internships or entry level jobs. They end up applying for these ghost listings
+and wasting their time and effort only to find out later that they are not real.
+This not only wastes their time but also demotivates them from applying for
+other listings in the future.
+4
+
+1.2
+
+Motivation
+
+The problems we have identified forms the core motivation for developing InternNova. As we have discovered, Bangladeshi students and fresh graduates
+struggle significantly with finding suitable internship and entry-level job opportunities due to several critical challenges:
+1. Platforms Problems: Platforms like LinkedIn [1] and Bdjobs [2] are
+not optimized for students seeking their first opportunities. LinkedIn requires
+extensive time investment in self-promotion and networking rather than allowing students to focus on skill development. On the other hand, Bdjobs [2] doesnt
+have enough internship and junior-level listings for the job market, making it
+difficult for students to find relevant opportunities.
+2. Ghost Job Listings: A big problem in the Bangladesh job market is
+the number of ghost job listings [3] by some companies to for extended market popularity and social media relevence. Companies post fake positions to
+inflate their market appearance. These listings waste students’ time and effort.
+More importantly, they undermine student motivation and confidence in the
+job search process. Bdjobs [2] is one of the biggest victim of this problem due
+to the lack of any identification and prevention mechanisms for such fraudulent
+postings.
+3. Information Asymmetry: Students don’t have access information
+about companies, internship positions, requirements, and realistic expectations.
+This information gap stops them from making decisions about which opportunities align with their skills and career aspirations [4].
+4. Ghosting After Interviews: One of the most frustrating experiences for students is when employers ghost them after interviews or any point
+throughout the application process. Research shows that 61% of job seekers
+experience post-interview ghosting, with this rate increasing by 9 percentage
+points since early 2024 [5]. Without any communication or feedback, students
+are left uncertain about their skills and status and thus gets discouraged from
+future applications. This unprofessional behavior from the companies damages
+the student experience and creates a cycle of frustration and demotivation. The
+problem is staggaringly high in Bangladesh where most platforms lack accountability mechanisms to address employment ghosting.
+5. Lack of Feedback from Interviews: Even when students receive
+rejection decisions, they rarely receive constructive feedback on their performance or areas for improvement. Studies indicate that 75% of job applications
+receive zero response from employers [5], leaving candidates with no information
+5
+
+about their application status or areas needing improvement. This statistics is
+at a full 100% for Bangladesh unless the candidate have previous network from
+which they can get the feedback. This lack of feedback prevents students from
+learning, growing, and refining their interview skills for future opportunities.
+Students are left guessing what went wrong and how to improve, resulting in
+an average ”Candidate Time Tax” of approximately 47 hours wasted per job
+search on ghosted processes [5].
+These challenges inspired us to create InternNova, a comprehensive platform specifically designed to address the unique needs of Bangladeshi students
+seeking internships and entry-level positions. By solving these problems one by
+one we can empower students to navigate the job market more effectively and
+achieve their career aspirations.
+
+1.3
+
+Objectives
+
+In our project we have two kins of objectives, Social and Technical. The social
+objectives are,
+• To create a trustworthy platform that connects students with genuine
+internship and entry-level job opportunities, reducing the prevalence of
+ghost listings.
+• To empower students with verified information about companies and positions, enabling them to make informed career decisions.
+• To foster transparency and accountability in the hiring process by implementing mechanisms to address employer ghosting and provide constructive feedback.
+On the other hand some of the technical objectives are,
+• To develop a user-friendly web application that allows students to easily
+search, filter, and apply for internships and entry-level jobs.
+• To implement a robust backend system that securely manages user data,
+job listings, and application processes.
+• To integrate intelligent matching algorithms that recommend relevant
+opportunities based on students’ skills, interests, and career goals.
+• To make sure the platform is scalable and can handle a growing number
+of users and listings over time.
+• To incorporate security measures to protect user data and ensure privacy.
+6
+
+Literature Review
+2.1
+
+Background Study
+
+The Bangladesh Youth Employment Crisis
+Bangladesh faces a complicated employment situation where economic growth
+has not translated into job creation for its youth population. According to the
+Centre for Policy Dialogue (CPD), employment growth has stalled in our country despite GDP recovery from various recent(specifically Covid-19) economic
+crisis, creating what economists term ”jobless growth” [6]. This disconnect
+between economic expansion and employment generation particularly affects
+fresh graduates entering the job market.
+
+The Bangladesh Labour Market Profile 2024/2025 reveals alarming statistics about youth unemployment, highlighting a high NEET (Not in Education,
+Employment, or Training) rate among Bangladeshi youth [7]. This situation is
+compounded by low private investment levels that fail to absorb new graduates
+into the workforce, creating a bottleneck in the employment pipeline.
+
+A particularly significant finding from the Bangladesh Institute of Development Studies (BIDS) shows that 28.24% of National University graduates
+remain unemployed [8]. This high unemployment rate among NU graduates
+reflects a deeper structural problem - a curriculum mismatch between what
+universities teach and what the job market demands. The study reveals systematic ”university bias” where employers filter CVs to prioritize graduates from
+top public universities (DU, BUET, IBA) or elite private institutions (NSU,
+BRAC, AIUB), effectively excluding the majority of graduates from consideration regardless of their actual capabilities.
+
+The Entry-Level Paradox and Salary Exploitation
+The Dhaka Tribune’s editorial analysis ”Lifting the curse of graduate unemployment” examines a critical contradiction in Bangladesh’s job market - the
+entry-level paradox [9]. Employers routinely advertise ”entry-level” positions
+while simultaneously demanding 2-3 years of prior experience, creating an im7
+
+possible catch-22 for fresh graduates. This practice effectively closes the traditional pathway to employment for university graduates who, by definition,
+cannot have industry experience.
+
+Compounding this problem is systematic salary exploitation. Community
+discussions on r/bangladesh reveal that Bachelor’s degree holders are routinely
+offered salaries of 10,000-15,000 BDT per month for full-time positions [10]. In
+Dhaka’s current economic context, these salaries barely cover daily transportation and meals, making them essentially unlivable wages. One particularly
+telling case involved a Master’s degree holder being offered only 12,000 BDT,
+demonstrating how qualification levels have become disconnected from compensation.
+
+Automation and Closing Traditional Entry Paths
+Dr. Khondaker Golam Moazzem’s analysis for CPD reveals that industrial
+growth in Bangladesh is failing to create jobs due to increasing automation [11].
+The Ready-Made Garment (RMG) sector, traditionally the largest employer
+of entry-level workers, is experiencing job reduction through technological advancement. This closure of the ”easy” entry path that previous generations
+relied upon forces graduates into more competitive sectors where nepotism and
+connections play larger roles.
+
+Platform-Specific Problems in Bangladesh
+The Bdjobs ”Black Hole” Phenomenon
+Community discussions across r/bangladesh consistently identify a pattern unique
+to Bangladesh’s largest job platform, Bdjobs. The ”Viewed” ghost phenomenon
+describes a frustrating experience where application status shows as ”Viewed
+by Employer” but candidates never receive any subsequent communication [10].
+Unlike Western platforms that send automated rejection emails, Bangladeshi
+companies often silently archive applications, leaving candidates in perpetual
+uncertainty.
+
+Multiple users report that job listings remain marked ”active” long after
+positions are filled, not for genuine hiring purposes but primarily for data collection [12]. This practice wastes candidates’ time and creates false hope in an
+already difficult job market. Shafiul Azam Shakil’s analysis of common Bdjobs
+mistakes highlights the need for platform-specific optimization strategies that
+shouldn’t be necessary if the platform functioned transparently.
+8
+
+LinkedIn Bangladesh’s Content Problem
+While LinkedIn functions relatively well in Western contexts, its Bangladesh
+iteration suffers from a unique degradation. Job seekers complain that feeds
+are dominated by copied motivational content and self-promotional posts rather
+than genuine hiring opportunities [1]. Additionally, the ”Easy Apply” feature
+often proves deceptive - many local companies enable this functionality but
+never check those application inboxes, preferring candidates who make direct
+contact via email or phone calls.
+Facebook and Telegram Scam Ecosystem
+A dangerous dimension of Bangladesh’s job market is the proliferation of scams
+on informal platforms. Fraudulent listings, particularly for data entry or airport
+jobs, request ”security money” ranging from 500-2,000 BDT via mobile money
+services like bKash or Nagad for supposed ”registration” or ”ID card” fees.
+Legitimate employers never request money from job applicants, making this a
+clear red flag that exploits desperate job seekers.
+
+The Nepotism Barrier: ”Mama/Khalu” Culture
+Perhaps the most pervasive and demoralizing aspect of Bangladesh’s job market is the widespread nepotism culture, colloquially termed the ”Mama/Khalu”
+(uncle/maternal uncle) system. Community discussions across r/bangladesh
+identify this as the number one frustration in job searching [13]. Candidates
+report that even for private sector entry-level positions, applications without
+insider references or family connections in positions of power are systematically
+dismissed.
+
+This nepotism concern gained national attention during the 2024 quota
+reform protests, where merit-based selection became a central demand. A particularly illustrative case study from r/bangladesh describes a Civil Engineer
+unable to find work in construction because firms hire exclusively through family connections. This individual was forced into completely unrelated sales
+positions despite years of specialized education, demonstrating how nepotism
+destroys human capital efficiency.
+
+The 6-Day Work Week Deception
+Community reports reveal a systematic pattern of dishonesty about work culture [14]. Job listings advertise ”5 days a week” working arrangements, but
+during final interviews or after joining, employees discover they must work Saturdays as well - the ”6-day trap.” This bait-and-switch tactic reflects broader
+9
+
+transparency problems in Bangladesh’s hiring ecosystem where false promises
+are used to attract candidates.
+
+Internship Exploitation and ”Coffee Culture”
+Most local internships in Bangladesh are completely unpaid, or if compensated,
+offer only minimal ”transport allowances” of 3,000-5,000 BDT. More concerning than low pay is the systematic misuse of interns. Multiple reports indicate
+interns are assigned menial tasks like fetching tea, making photocopies, and
+running personal errands for senior staff rather than receiving actual professional training and skill development. This ”coffee culture” undermines the
+educational purpose of internships and exploits students’ desperate need for
+credentials.
+
+Mental Health Impact
+The cumulative effect of these barriers creates severe mental health consequences. Discussions on r/bangladesh titled ”Job Searching and Mental State”
+and ”No luck finding a job leading to insanity” reveal depression, anxiety,
+and hopelessness among job seekers [10] [13]. The combination of ghosting,
+nepotism, exploitation, and false promises creates a psychologically damaging
+experience that extends beyond mere economic hardship.
+
+International Context: The Ghosting Epidemic
+While Bangladesh faces unique challenges, professional ghosting has become a
+global crisis. The 2025 Ghosting Index, analyzing over 50 studies worldwide,
+found that 61% of job seekers experience post-interview ghosting, with this rate
+increasing by 9 percentage points since early 2024 [5]. Additionally, 75% of job
+applications receive zero response from employers globally, creating an average
+”Candidate Time Tax” of 47 hours wasted per job search.
+
+This international context reveals that while Bangladesh’s problems have
+local characteristics (nepotism, university bias, bKash scams), the fundamental breakdown in hiring communication is a global phenomenon. However,
+Bangladesh lacks the accountability mechanisms and worker protections that
+provide some recourse in developed markets, making the situation more severe
+for Bangladeshi job seekers.
+
+10
+
+The Skills Mismatch
+Research by CPD and BIDS consistently identifies a fundamental ”skills mismatch” - universities teaching theoretical knowledge while employers demand
+practical software and soft skills [6] [8]. This gap means even qualified graduates
+struggle to demonstrate job-ready capabilities, further disadvantaging them
+in an already hostile job market. The curriculum disconnect particularly affects National University graduates, who represent the majority of Bangladesh’s
+higher education output but receive the least market recognition.
+
+2.2
+
+Our Solution
+
+2.3
+
+Functional Requirements
+
+11
+
+Methodology
+3.1
+
+Application Flow
+
+3.2
+
+Function and Modules
+
+12
+
+Design and Implementation
+4.1
+
+User Interface
+
+4.2
+
+Backend Design
+
+4.3
+
+Security Measures and Vulnerabilities Prevention
+
+4.4
+
+Development tools and Environment
+
+13
+
+Conclusion
+5.1
+
+Limitations of this project
+
+5.2
+
+Future scope
+
+5.3
+
+Conclusion
+
+14
+
+References
+[1] LinkedIn Corporation. (2026) Linkedin. Professional networking platform.
+[Online]. Available: https://www.linkedin.com/
+[2] Bdjobs.com Ltd. (2026) Bdjobs.com. Leading job portal in Bangladesh.
+[Online]. Available: https://bdjobs.com/
+[3] B. Mutasim. (2025) Ghost job listings problem in bangladesh.
+LinkedIn post discussing ghost job listings and hiring practices
+in Bangladesh, particularly on platforms like Bdjobs. [Online].
+Available: https://www.linkedin.com/posts/bmutasim hiringpracticesbangladeshjobs-developmentjobs-activity-7340796751378882560-2O4M/
+[4] Y. Jiang, “Information asymmetry and job market dynamics,” Ph.D.
+dissertation, Columbia University, 2021, academic research on information
+asymmetry in job markets. [Online]. Available: https://econ.columbia.
+edu/wp-content/uploads/sites/18/2021/03/IAJS JMP Jiang-4.pdf
+[5] J. Gillis and M. Simpson. (2025) The 2025 ghosting index: How
+employers and candidates are disappearing from each other. The
+Interview Guys. Comprehensive research report on professional ghosting
+trends in hiring, analyzing over 50 studies. [Online]. Available:
+https://blog.theinterviewguys.com/the-2025-ghosting-index/
+[6] Centre for Policy Dialogue. (2024) Employment growth remains stalled
+as opportunities fail to expand. Centre for Policy Dialogue (CPD).
+Report on jobless growth in Bangladesh despite GDP recovery. [Online].
+Available: https://cpd.org.bd/employment-growth-remains-stalled-asopportunities-fail-to-expand/
+[7] Ulandssekretariatet. (2024) Bangladesh labour market profile 2024/2025.
+Ulandssekretariatet. Comprehensive report on Bangladesh labour market
+including NEET rates among youth. [Online]. Available: https://www.
+ulandssekretariatet.dk/wp-content/uploads/2024/03/LMP-Bangladesh2024-final.pdf
+[8] Dhaka Tribune. (2024) Study: 28.24% of national university graduates
+unemployed. Dhaka Tribune. Coverage of BIDS study on National
+University graduate unemployment and curriculum mismatch. [Online].
+15
+
+Available: https://www.dhakatribune.com/bangladesh/367595/study-28.
+24%25-of-national-university-graduates
+[9] Dhaka Tribune Editorial. (2024) Lifting the curse of graduate
+unemployment. Dhaka Tribune. Editorial analysis of the entry-level
+paradox in Bangladesh job market. [Online]. Available:
+https:
+//www.dhakatribune.com/opinion/editorial/391384/lifting-the-curse-ofgraduate-unemployment
+[10] r/bangladesh. (2024) Job searching and mental state. Reddit. Community
+discussion on mental health impacts of job searching, Bdjobs ghosting,
+and low salary offers. [Online]. Available: https://www.reddit.com/r/
+bangladesh/comments/1otie3h/job searching and mental state/
+[11] K. G. Moazzem. (2024) Industrial growth fails to create more
+jobs in bangladesh. Centre for Policy Dialogue (CPD). Analysis of
+automation impact on job creation in Bangladesh RMG sector. [Online].
+Available: https://cpd.org.bd/industrial-growth-fails-to-create-morejobs-in-bangladesh/
+[12] S. A. Shakil. (2024) Avoid these 5 mistakes in your bdjobs
+account. YouTube. Video guide on optimizing Bdjobs profile to
+address the platform’s visibility issues. [Online]. Available: https:
+//www.youtube.com/watch?v=c6AsqQr58nA
+[13] r/bangladesh. (2024) No luck finding a job leading to insanity. Reddit.
+Case study of Civil Engineer struggling due to nepotism in Bangladesh
+job market. [Online]. Available: https://www.reddit.com/r/bangladesh/
+comments/1db5bwr/no luck finding a job leading to insanity/
+[14] ——. (2024) Frustration regarding job search. Reddit. Discussion
+highlighting 6-day work week deception and hiring dishonesty. [Online].
+Available: https://www.reddit.com/r/bangladesh/comments/1hwka21/
+frustration regarding job search/
+
+16
+
+

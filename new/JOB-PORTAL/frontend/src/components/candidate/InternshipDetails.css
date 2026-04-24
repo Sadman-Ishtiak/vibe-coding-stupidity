@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Copied bootstrap-based styles for internship details (moved from ApplicationDetails.css) */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+/* Note: this file mirrors the earlier ApplicationDetails.css; it contains Bootstrap base rules and helpers used by the internship details markup. */
+
+body { font-family: var(--bs-font-sans-serif); }
+
+/* Minimal local overrides for internship page */
+.internship-details .single-job-thumb img { width: 100%; height: auto; display:block; }
+.internship-details .wd-job-author2 { display:flex; justify-content:space-between; gap:1rem; align-items:center; }
+.internship-details .content-left { display:flex; gap:1rem; align-items:center; }
+.internship-details .thumb img { width:80px; height:80px; object-fit:cover; }
+.internship-details .btn-popup, .internship-details .btn-apply { background: var(--bs-primary); color: #fff; padding: .5rem 1rem; border-radius: .25rem; text-decoration:none; }
+
+/* Keep rest of Bootstrap utilities available via the long original CSS file in case other pages rely on them. */

@@ -1,0 +1,18 @@
+InternNova - Auth & Security Summary
+
+1. Architecture
+- Strategy: Dual-token JWT system (Access + Refresh).
+- Tokens: 
+  - Access Token: Short-lived (15m), used for API authorization.
+  - Refresh Token: Long-lived (7d), stored in secure HTTP-only cookies (with DB rotation).
+- Encryption: Passwords hashed using Bcrypt.
+
+2. Authentication Flow
+- Login: returns Access Token (JSON) + Refresh Token (Cookie).
+- Persistence: Client stores Access Token; Refresh Token handles long-term sessions securely.
+- Auto-Refresh: Axios interceptors catch '401 Unauthorized' responses, automatically call the refresh endpoint to rotate tokens, and retry the original request.
+
+3. Role-Based Access Control (RBAC)
+- Roles: 'Candidate' and 'Recruiter'.
+- Backend Enforcement: Middleware (authMiddleware, roleMiddleware) validates JWT signatures and strictly restricts endpoints by user role.
+- Frontend Enforcement: 'ProtectedRoute' component and conditional rendering (Navbar/Menus) limit UI access based on the authenticated user's role.
